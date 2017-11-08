@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute } from 'react-router';
+import { Router, Route } from 'react-router';
 
-import AlertContainer from 'ringcentral-widget/containers/AlertContainer';
-import WelcomePage from 'ringcentral-widget/containers/WelcomePage';
 import CallingSettingsPage from 'ringcentral-widget/containers/CallingSettingsPage';
 import RegionSettingsPage from 'ringcentral-widget/containers/RegionSettingsPage';
 import DialerPage from 'ringcentral-widget/containers/DialerPage';
@@ -18,10 +16,12 @@ import CallHistoryPage from 'ringcentral-widget/containers/CallHistoryPage';
 import IncomingCallPage from 'ringcentral-widget/containers/IncomingCallPage';
 import CallCtrlPage from 'ringcentral-widget/containers/CallCtrlPage';
 import CallBadgeContainer from 'ringcentral-widget/containers/CallBadgeContainer';
+import WelcomePage from 'ringcentral-widget/containers/WelcomePage';
+
+import AlertContainer from '../AlertContainer';
 
 import MainView from '../MainView';
 import AppView from '../AppView';
-
 
 export default function App({
   phone,
@@ -86,7 +86,8 @@ export default function App({
                 auth={phone.auth}
                 locale={phone.locale}
                 rateLimiter={phone.rateLimiter}
-                connectivityMonitor={phone.connectivityMonitor} >
+                connectivityMonitor={phone.connectivityMonitor}
+              >
                 <AlertContainer
                   locale={phone.locale}
                   alert={phone.alert}
@@ -201,6 +202,7 @@ export default function App({
                   webphone={phone.webphone}
                   regionSettings={phone.regionSettings}
                   forwardingNumber={phone.forwardingNumber}
+                  callMonitor={{ calls: [{}, {}] }}
                   onAdd={() => {
                     phone.router.push('/dialer');
                   }}
