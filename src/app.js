@@ -192,7 +192,7 @@ const phone = createPhone({
   isUsingDefaultClientId,
   enableSMSTemplate,
   enableSmartNote,
-  // enableSideWidget,
+  enableSideWidget: !!enableSideWidget,
   enableAudioInitPrompt,
   enableSharedMessages,
   enableLoadMoreCalls,
