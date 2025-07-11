@@ -4748,8 +4748,8 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
 function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 (0, _usmRedux.setAutoFreeze)(false);
-(0, _usmRedux.setPatchesToggle)(!({"NODE_ENV":"production","API_CONFIG":{"appKey":"SlwZwfZ_STmpq2W_qOaC5A","server":"https://platform.ringcentral.com"},"APP_VERSION":"2.2.1","HOSTING_URL":null,"REDIRECT_URI":undefined,"PROXY_URI":undefined,"PREFIX":"rc-widget","BRAND":"rc","BRAND_CONFIGS":{"atos":{"id":"2020","code":"atos","name":"Unify Office","shortName":"Unify Office","appName":"Unify Office Embeddable","fullName":"Unify Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.unifyoffice.com/","protocol":"unifyoffice://","name":"Unify Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Unify Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.unifyoffice.com/teleconference","rcvProductName":"Unify Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","eulaLink":"https://www.ringcentral.com/de/de/legal/privacy-notice","assets":{"logo":"/assets/atos/logo.svg","icon":"/assets/atos/icon.png"},"showFeedback":false,"enableEDP":true},"att":{"id":"3420","code":"att","name":"Office@Hand","appName":"Office@Hand Embeddable","fullName":"Office@Hand","application":"Office@Hand Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.officeathand.att.com/","protocol":"officeathand://","name":"Office@Hand App"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"callWithSoftphone":{"protocol":"attvr20://","name":"Office@Hand Phone","appDownloadUrl":{"mac":"https://www.ringcentral.com/apps/officeathand-mac","windows":"https://www.ringcentral.com/apps/officeathand-windows"}},"rcmProductName":"AT&T Office@Hand Meeting","rcvProductName":"AT&T Office@Hand Meetings","rcvMeetingTopic":"{extensionName}'s {brandName} Meetings","rcvSettingsTitle":"{brandName} Meetings settings","rcvTeleconference":"https://meetings.officeathand.att.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings-officeathand.att.com/teleconference","eulaLink":"http://www.att.com/officeathandpolicy","assets":{"logo":"/assets/att/logo.svg","icon":"/assets/att/icon.svg"},"showFeedback":false,"subBrands":[{"id":"3460","code":"attub"}],"enableEDP":true},"avaya":{"id":"6010","code":"avaya","name":"Avaya Cloud Office","shortName":"Avaya Cloud Office","appName":"Avaya Cloud Office Embeddable","fullName":"Avaya Cloud Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.cloudoffice.avaya.com/","protocol":"rcapp://","name":"Avaya Cloud App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Avaya Cloud Office Phone"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"allowRegionSettings":true,"signupUrl":"https://www.avaya.com/en/products/ucaas/cloud-office-pricing/","rcvTeleconference":"https://video.cloudoffice.avaya.com/teleconference","rcvProductName":"Avaya Cloud Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","assets":{"logo":"/assets/avaya/logo.svg","icon":"/assets/avaya/icon.svg"},"showFeedback":false,"enableEDP":true},"bt":{"id":"7710","code":"bt","name":"BT Cloud Work","appName":"BT Cloud Work Embeddable","fullName":"BT Cloud Work","application":"BT Cloud Work Embeddable","callWithJupiter":{"link":"https://app.cloudwork.bt.com/","protocol":"com.bt.cloudwork.app://","name":"BT Cloud Work App"},"callWithSoftphone":{"protocol":"rcbtmobile://","name":"BT Cloud Work Phone"},"defaultLocale":"en-GB","supportedLocales":["en-GB","en-US","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcmProductName":"BT Cloud Work Meetings","rcvProductName":"BT Cloud Work Video","rcvTeleconference":"https://video.cloudwork.bt.com/teleconference","rcvMeetingTopic":"{extensionName}'s {shortName} Video meeting","rcvSettingsTitle":"{shortName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.btcloudphone.bt.com/teleconference","eulaLink":"https://www.bt.com/products/static/terms/terms-of-use.html","assets":{"logo":"/assets/bt/logo.svg","icon":"/assets/bt/icon.svg"},"showFeedback":false,"enableEDP":true},"rainbow":{"id":"2110","code":"rainbow","name":"Rainbow Office","shortName":"Rainbow Office","appName":"Rainbow Office Embeddable","fullName":"Rainbow Office","defaultLocale":"fr-FR","supportedLocales":["fr-FR","en-US","en-GB","en-AU","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"eulaLink":"https://www.ringcentral.fr/legal/privacy-notice.html","callWithJupiter":{"link":"https://app.rainbowoffice.com/","protocol":"com.rainbowoffice.app://","name":"Rainbow Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Rainbow Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.rainbowoffice.com/teleconference","rcvProductName":"Rainbow Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} vous a invité à une réunion {rcvProductName}.\n\nVeuillez rejoindre la réunion à l’aide de ce lien :\n    {joinUri}{passwordTpl}","assets":{"logo":"/assets/rainbow/logo.svg","icon":"/assets/rainbow/icon.png"},"showFeedback":false,"enableEDP":true},"rc":{"id":"1210","code":"rc","name":"RingCentral","appName":"RingCentral Embeddable","fullName":"RingCentral","application":"RingCentral Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"signupUrl":"https://www.ringcentral.com/office/plansandpricing.html","eulaLink":"https://www.ringcentral.com/legal/eulatos.html","callWithJupiter":{"link":"https://app.ringcentral.com/","protocol":"rcapp://","name":"RingCentral App"},"isDisableSpartan":true,"allowJupiterUniversalLink":false,"callWithSoftphone":{"protocol":"rcmobile://","name":"RingCentral Phone"},"rcmProductName":"RingCentral Meetings","rcvProductName":"RingCentral Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","rcvTeleconference":"https://v.ringcentral.com/teleconference/","assets":{"logo":"/assets/rc/logo.svg","icon":"/assets/rc/icon.svg"},"subBrands":[{"id":"5010","code":"rcau"},{"id":"3610","code":"rcca"},{"id":"2010","code":"rceu"},{"id":"3710","code":"rcuk"}],"showFeedback":false,"enableEDP":true},"telus":{"id":"7310","code":"telus","name":"TELUS Business Connect","appName":"TELUS Business Connect Embeddable","fullName":"TELUS Business Connect","application":"TELUS Business Connect Embeddable","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.businessconnect.telus.com/","protocol":"rctelus://","name":"TELUS Business Connect App"},"callWithSoftphone":{"protocol":"rctelus://","name":"TELUS Business Connect Phone"},"allowRegionSettings":true,"isDisableSpartan":true,"allowJupiterUniversalLink":true,"rcmProductName":"TELUS Business Connect Meetings","rcvProductName":"Business Connect Video Meeting","rcvMeetingTopic":"{extensionName}'s Business Connect Video meeting","rcvSettingsTitle":"Business Connect Video meeting settings","rcvTeleconference":"https://video.businessconnect.telus.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a TELUS Business Connect Video meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.businessconnect.telus.com/teleconference","eulaLink":"http://telus.com/BusinessConnect/ServiceTerms","assets":{"logo":"/assets/telus/logo.svg","icon":"/assets/telus/icon.svg"},"showFeedback":false,"enableEDP":true}},"ERROR_REPORT_KEY":undefined,"RECORDING_LINK":"https://ringcentral.github.io/ringcentral-media-reader/","MIXPANEL_KEY":"","ANALYTICS_SECRET_KEY":"adasdawqsadaaasa...","NOISE_REDUCTION_SDK_URL":"/noise-reduction","ADAPTER_NAME":"adapter.js"}).DISABLE_PATCHES);
-if (!({"NODE_ENV":"production","API_CONFIG":{"appKey":"SlwZwfZ_STmpq2W_qOaC5A","server":"https://platform.ringcentral.com"},"APP_VERSION":"2.2.1","HOSTING_URL":null,"REDIRECT_URI":undefined,"PROXY_URI":undefined,"PREFIX":"rc-widget","BRAND":"rc","BRAND_CONFIGS":{"atos":{"id":"2020","code":"atos","name":"Unify Office","shortName":"Unify Office","appName":"Unify Office Embeddable","fullName":"Unify Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.unifyoffice.com/","protocol":"unifyoffice://","name":"Unify Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Unify Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.unifyoffice.com/teleconference","rcvProductName":"Unify Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","eulaLink":"https://www.ringcentral.com/de/de/legal/privacy-notice","assets":{"logo":"/assets/atos/logo.svg","icon":"/assets/atos/icon.png"},"showFeedback":false,"enableEDP":true},"att":{"id":"3420","code":"att","name":"Office@Hand","appName":"Office@Hand Embeddable","fullName":"Office@Hand","application":"Office@Hand Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.officeathand.att.com/","protocol":"officeathand://","name":"Office@Hand App"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"callWithSoftphone":{"protocol":"attvr20://","name":"Office@Hand Phone","appDownloadUrl":{"mac":"https://www.ringcentral.com/apps/officeathand-mac","windows":"https://www.ringcentral.com/apps/officeathand-windows"}},"rcmProductName":"AT&T Office@Hand Meeting","rcvProductName":"AT&T Office@Hand Meetings","rcvMeetingTopic":"{extensionName}'s {brandName} Meetings","rcvSettingsTitle":"{brandName} Meetings settings","rcvTeleconference":"https://meetings.officeathand.att.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings-officeathand.att.com/teleconference","eulaLink":"http://www.att.com/officeathandpolicy","assets":{"logo":"/assets/att/logo.svg","icon":"/assets/att/icon.svg"},"showFeedback":false,"subBrands":[{"id":"3460","code":"attub"}],"enableEDP":true},"avaya":{"id":"6010","code":"avaya","name":"Avaya Cloud Office","shortName":"Avaya Cloud Office","appName":"Avaya Cloud Office Embeddable","fullName":"Avaya Cloud Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.cloudoffice.avaya.com/","protocol":"rcapp://","name":"Avaya Cloud App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Avaya Cloud Office Phone"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"allowRegionSettings":true,"signupUrl":"https://www.avaya.com/en/products/ucaas/cloud-office-pricing/","rcvTeleconference":"https://video.cloudoffice.avaya.com/teleconference","rcvProductName":"Avaya Cloud Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","assets":{"logo":"/assets/avaya/logo.svg","icon":"/assets/avaya/icon.svg"},"showFeedback":false,"enableEDP":true},"bt":{"id":"7710","code":"bt","name":"BT Cloud Work","appName":"BT Cloud Work Embeddable","fullName":"BT Cloud Work","application":"BT Cloud Work Embeddable","callWithJupiter":{"link":"https://app.cloudwork.bt.com/","protocol":"com.bt.cloudwork.app://","name":"BT Cloud Work App"},"callWithSoftphone":{"protocol":"rcbtmobile://","name":"BT Cloud Work Phone"},"defaultLocale":"en-GB","supportedLocales":["en-GB","en-US","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcmProductName":"BT Cloud Work Meetings","rcvProductName":"BT Cloud Work Video","rcvTeleconference":"https://video.cloudwork.bt.com/teleconference","rcvMeetingTopic":"{extensionName}'s {shortName} Video meeting","rcvSettingsTitle":"{shortName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.btcloudphone.bt.com/teleconference","eulaLink":"https://www.bt.com/products/static/terms/terms-of-use.html","assets":{"logo":"/assets/bt/logo.svg","icon":"/assets/bt/icon.svg"},"showFeedback":false,"enableEDP":true},"rainbow":{"id":"2110","code":"rainbow","name":"Rainbow Office","shortName":"Rainbow Office","appName":"Rainbow Office Embeddable","fullName":"Rainbow Office","defaultLocale":"fr-FR","supportedLocales":["fr-FR","en-US","en-GB","en-AU","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"eulaLink":"https://www.ringcentral.fr/legal/privacy-notice.html","callWithJupiter":{"link":"https://app.rainbowoffice.com/","protocol":"com.rainbowoffice.app://","name":"Rainbow Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Rainbow Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.rainbowoffice.com/teleconference","rcvProductName":"Rainbow Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} vous a invité à une réunion {rcvProductName}.\n\nVeuillez rejoindre la réunion à l’aide de ce lien :\n    {joinUri}{passwordTpl}","assets":{"logo":"/assets/rainbow/logo.svg","icon":"/assets/rainbow/icon.png"},"showFeedback":false,"enableEDP":true},"rc":{"id":"1210","code":"rc","name":"RingCentral","appName":"RingCentral Embeddable","fullName":"RingCentral","application":"RingCentral Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"signupUrl":"https://www.ringcentral.com/office/plansandpricing.html","eulaLink":"https://www.ringcentral.com/legal/eulatos.html","callWithJupiter":{"link":"https://app.ringcentral.com/","protocol":"rcapp://","name":"RingCentral App"},"isDisableSpartan":true,"allowJupiterUniversalLink":false,"callWithSoftphone":{"protocol":"rcmobile://","name":"RingCentral Phone"},"rcmProductName":"RingCentral Meetings","rcvProductName":"RingCentral Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","rcvTeleconference":"https://v.ringcentral.com/teleconference/","assets":{"logo":"/assets/rc/logo.svg","icon":"/assets/rc/icon.svg"},"subBrands":[{"id":"5010","code":"rcau"},{"id":"3610","code":"rcca"},{"id":"2010","code":"rceu"},{"id":"3710","code":"rcuk"}],"showFeedback":false,"enableEDP":true},"telus":{"id":"7310","code":"telus","name":"TELUS Business Connect","appName":"TELUS Business Connect Embeddable","fullName":"TELUS Business Connect","application":"TELUS Business Connect Embeddable","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.businessconnect.telus.com/","protocol":"rctelus://","name":"TELUS Business Connect App"},"callWithSoftphone":{"protocol":"rctelus://","name":"TELUS Business Connect Phone"},"allowRegionSettings":true,"isDisableSpartan":true,"allowJupiterUniversalLink":true,"rcmProductName":"TELUS Business Connect Meetings","rcvProductName":"Business Connect Video Meeting","rcvMeetingTopic":"{extensionName}'s Business Connect Video meeting","rcvSettingsTitle":"Business Connect Video meeting settings","rcvTeleconference":"https://video.businessconnect.telus.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a TELUS Business Connect Video meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.businessconnect.telus.com/teleconference","eulaLink":"http://telus.com/BusinessConnect/ServiceTerms","assets":{"logo":"/assets/telus/logo.svg","icon":"/assets/telus/icon.svg"},"showFeedback":false,"enableEDP":true}},"ERROR_REPORT_KEY":undefined,"RECORDING_LINK":"https://ringcentral.github.io/ringcentral-media-reader/","MIXPANEL_KEY":"","ANALYTICS_SECRET_KEY":"adasdawqsadaaasa...","NOISE_REDUCTION_SDK_URL":"/noise-reduction","ADAPTER_NAME":"adapter.js"}).DISABLE_PATCHES) {
+(0, _usmRedux.setPatchesToggle)(!({"NODE_ENV":"production","API_CONFIG":{"appKey":"SlwZwfZ_STmpq2W_qOaC5A","server":"https://platform.ringcentral.com"},"APP_VERSION":"2.3.0","HOSTING_URL":null,"REDIRECT_URI":undefined,"PROXY_URI":undefined,"PREFIX":"rc-widget","BRAND":"rc","BRAND_CONFIGS":{"atos":{"id":"2020","code":"atos","name":"Unify Office","shortName":"Unify Office","appName":"Unify Office Embeddable","fullName":"Unify Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.unifyoffice.com/","protocol":"unifyoffice://","name":"Unify Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Unify Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.unifyoffice.com/teleconference","rcvProductName":"Unify Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","eulaLink":"https://www.ringcentral.com/de/de/legal/privacy-notice","assets":{"logo":"/assets/atos/logo.svg","icon":"/assets/atos/icon.png"},"showFeedback":false,"enableEDP":true},"att":{"id":"3460","code":"att","name":"Office@Hand","appName":"Office@Hand Embeddable","fullName":"Office@Hand","application":"Office@Hand Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.officeathand.att.com/","protocol":"officeathand://","name":"Office@Hand App"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"callWithSoftphone":{"protocol":"attvr20://","name":"Office@Hand Phone","appDownloadUrl":{"mac":"https://www.ringcentral.com/apps/officeathand-mac","windows":"https://www.ringcentral.com/apps/officeathand-windows"}},"rcmProductName":"AT&T Office@Hand Meeting","rcvProductName":"AT&T Office@Hand Meetings","rcvMeetingTopic":"{extensionName}'s {brandName} Meetings","rcvSettingsTitle":"{brandName} Meetings settings","rcvTeleconference":"https://meetings.officeathand.att.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings-officeathand.att.com/teleconference","eulaLink":"http://www.att.com/officeathandpolicy","assets":{"logo":"/assets/att/logo.svg","icon":"/assets/att/icon.svg"},"showFeedback":false,"subBrands":[{"id":"3420","code":"attub"}],"enableEDP":true},"avaya":{"id":"6010","code":"avaya","name":"Avaya Cloud Office","shortName":"Avaya Cloud Office","appName":"Avaya Cloud Office Embeddable","fullName":"Avaya Cloud Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.cloudoffice.avaya.com/","protocol":"rcapp://","name":"Avaya Cloud App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Avaya Cloud Office Phone"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"allowRegionSettings":true,"signupUrl":"https://www.avaya.com/en/products/ucaas/cloud-office-pricing/","rcvTeleconference":"https://video.cloudoffice.avaya.com/teleconference","rcvProductName":"Avaya Cloud Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","assets":{"logo":"/assets/avaya/logo.svg","icon":"/assets/avaya/icon.svg"},"showFeedback":false,"enableEDP":true},"bt":{"id":"7710","code":"bt","name":"BT Cloud Work","appName":"BT Cloud Work Embeddable","fullName":"BT Cloud Work","application":"BT Cloud Work Embeddable","callWithJupiter":{"link":"https://app.cloudwork.bt.com/","protocol":"com.bt.cloudwork.app://","name":"BT Cloud Work App"},"callWithSoftphone":{"protocol":"rcbtmobile://","name":"BT Cloud Work Phone"},"defaultLocale":"en-GB","supportedLocales":["en-GB","en-US","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcmProductName":"BT Cloud Work Meetings","rcvProductName":"BT Cloud Work Video","rcvTeleconference":"https://video.cloudwork.bt.com/teleconference","rcvMeetingTopic":"{extensionName}'s {shortName} Video meeting","rcvSettingsTitle":"{shortName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.btcloudphone.bt.com/teleconference","eulaLink":"https://www.bt.com/products/static/terms/terms-of-use.html","assets":{"logo":"/assets/bt/logo.svg","icon":"/assets/bt/icon.svg"},"showFeedback":false,"enableEDP":true},"rainbow":{"id":"2110","code":"rainbow","name":"Rainbow Office","shortName":"Rainbow Office","appName":"Rainbow Office Embeddable","fullName":"Rainbow Office","defaultLocale":"fr-FR","supportedLocales":["fr-FR","en-US","en-GB","en-AU","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"eulaLink":"https://www.ringcentral.fr/legal/privacy-notice.html","callWithJupiter":{"link":"https://app.rainbowoffice.com/","protocol":"com.rainbowoffice.app://","name":"Rainbow Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Rainbow Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.rainbowoffice.com/teleconference","rcvProductName":"Rainbow Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} vous a invité à une réunion {rcvProductName}.\n\nVeuillez rejoindre la réunion à l’aide de ce lien :\n    {joinUri}{passwordTpl}","assets":{"logo":"/assets/rainbow/logo.svg","icon":"/assets/rainbow/icon.png"},"showFeedback":false,"enableEDP":true},"rc":{"id":"1210","code":"rc","name":"RingCentral","appName":"RingCentral Embeddable","fullName":"RingCentral","application":"RingCentral Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"signupUrl":"https://www.ringcentral.com/office/plansandpricing.html","eulaLink":"https://www.ringcentral.com/legal/eulatos.html","callWithJupiter":{"link":"https://app.ringcentral.com/","protocol":"rcapp://","name":"RingCentral App"},"isDisableSpartan":true,"allowJupiterUniversalLink":false,"callWithSoftphone":{"protocol":"rcmobile://","name":"RingCentral Phone"},"rcmProductName":"RingCentral Meetings","rcvProductName":"RingCentral Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","rcvTeleconference":"https://v.ringcentral.com/teleconference/","assets":{"logo":"/assets/rc/logo.svg","icon":"/assets/rc/icon.svg"},"subBrands":[{"id":"5010","code":"rcau"},{"id":"3610","code":"rcca"},{"id":"2010","code":"rceu"},{"id":"3710","code":"rcuk"}],"showFeedback":false,"enableEDP":true},"telus":{"id":"7310","code":"telus","name":"TELUS Business Connect","appName":"TELUS Business Connect Embeddable","fullName":"TELUS Business Connect","application":"TELUS Business Connect Embeddable","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.businessconnect.telus.com/","protocol":"rctelus://","name":"TELUS Business Connect App"},"callWithSoftphone":{"protocol":"rctelus://","name":"TELUS Business Connect Phone"},"allowRegionSettings":true,"isDisableSpartan":true,"allowJupiterUniversalLink":true,"rcmProductName":"TELUS Business Connect Meetings","rcvProductName":"Business Connect Video Meeting","rcvMeetingTopic":"{extensionName}'s Business Connect Video meeting","rcvSettingsTitle":"Business Connect Video meeting settings","rcvTeleconference":"https://video.businessconnect.telus.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a TELUS Business Connect Video meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.businessconnect.telus.com/teleconference","eulaLink":"http://telus.com/BusinessConnect/ServiceTerms","assets":{"logo":"/assets/telus/logo.svg","icon":"/assets/telus/icon.svg"},"showFeedback":false,"enableEDP":true}},"ERROR_REPORT_KEY":undefined,"RECORDING_LINK":"https://ringcentral.github.io/ringcentral-media-reader/","MIXPANEL_KEY":"","ANALYTICS_SECRET_KEY":"adasdawqsadaaasa...","NOISE_REDUCTION_SDK_URL":"/noise-reduction","ADAPTER_NAME":"adapter.js"}).DISABLE_PATCHES);
+if (!({"NODE_ENV":"production","API_CONFIG":{"appKey":"SlwZwfZ_STmpq2W_qOaC5A","server":"https://platform.ringcentral.com"},"APP_VERSION":"2.3.0","HOSTING_URL":null,"REDIRECT_URI":undefined,"PROXY_URI":undefined,"PREFIX":"rc-widget","BRAND":"rc","BRAND_CONFIGS":{"atos":{"id":"2020","code":"atos","name":"Unify Office","shortName":"Unify Office","appName":"Unify Office Embeddable","fullName":"Unify Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.unifyoffice.com/","protocol":"unifyoffice://","name":"Unify Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Unify Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.unifyoffice.com/teleconference","rcvProductName":"Unify Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","eulaLink":"https://www.ringcentral.com/de/de/legal/privacy-notice","assets":{"logo":"/assets/atos/logo.svg","icon":"/assets/atos/icon.png"},"showFeedback":false,"enableEDP":true},"att":{"id":"3460","code":"att","name":"Office@Hand","appName":"Office@Hand Embeddable","fullName":"Office@Hand","application":"Office@Hand Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.officeathand.att.com/","protocol":"officeathand://","name":"Office@Hand App"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"callWithSoftphone":{"protocol":"attvr20://","name":"Office@Hand Phone","appDownloadUrl":{"mac":"https://www.ringcentral.com/apps/officeathand-mac","windows":"https://www.ringcentral.com/apps/officeathand-windows"}},"rcmProductName":"AT&T Office@Hand Meeting","rcvProductName":"AT&T Office@Hand Meetings","rcvMeetingTopic":"{extensionName}'s {brandName} Meetings","rcvSettingsTitle":"{brandName} Meetings settings","rcvTeleconference":"https://meetings.officeathand.att.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings-officeathand.att.com/teleconference","eulaLink":"http://www.att.com/officeathandpolicy","assets":{"logo":"/assets/att/logo.svg","icon":"/assets/att/icon.svg"},"showFeedback":false,"subBrands":[{"id":"3420","code":"attub"}],"enableEDP":true},"avaya":{"id":"6010","code":"avaya","name":"Avaya Cloud Office","shortName":"Avaya Cloud Office","appName":"Avaya Cloud Office Embeddable","fullName":"Avaya Cloud Office","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.cloudoffice.avaya.com/","protocol":"rcapp://","name":"Avaya Cloud App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Avaya Cloud Office Phone"},"isDisableSpartan":true,"allowJupiterUniversalLink":true,"allowRegionSettings":true,"signupUrl":"https://www.avaya.com/en/products/ucaas/cloud-office-pricing/","rcvTeleconference":"https://video.cloudoffice.avaya.com/teleconference","rcvProductName":"Avaya Cloud Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","assets":{"logo":"/assets/avaya/logo.svg","icon":"/assets/avaya/icon.svg"},"showFeedback":false,"enableEDP":true},"bt":{"id":"7710","code":"bt","name":"BT Cloud Work","appName":"BT Cloud Work Embeddable","fullName":"BT Cloud Work","application":"BT Cloud Work Embeddable","callWithJupiter":{"link":"https://app.cloudwork.bt.com/","protocol":"com.bt.cloudwork.app://","name":"BT Cloud Work App"},"callWithSoftphone":{"protocol":"rcbtmobile://","name":"BT Cloud Work Phone"},"defaultLocale":"en-GB","supportedLocales":["en-GB","en-US","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcmProductName":"BT Cloud Work Meetings","rcvProductName":"BT Cloud Work Video","rcvTeleconference":"https://video.cloudwork.bt.com/teleconference","rcvMeetingTopic":"{extensionName}'s {shortName} Video meeting","rcvSettingsTitle":"{shortName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.btcloudphone.bt.com/teleconference","eulaLink":"https://www.bt.com/products/static/terms/terms-of-use.html","assets":{"logo":"/assets/bt/logo.svg","icon":"/assets/bt/icon.svg"},"showFeedback":false,"enableEDP":true},"rainbow":{"id":"2110","code":"rainbow","name":"Rainbow Office","shortName":"Rainbow Office","appName":"Rainbow Office Embeddable","fullName":"Rainbow Office","defaultLocale":"fr-FR","supportedLocales":["fr-FR","en-US","en-GB","en-AU","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"eulaLink":"https://www.ringcentral.fr/legal/privacy-notice.html","callWithJupiter":{"link":"https://app.rainbowoffice.com/","protocol":"com.rainbowoffice.app://","name":"Rainbow Office App"},"callWithSoftphone":{"protocol":"rcmobile://","name":"Rainbow Office Phone"},"isDisableSpartan":true,"allowRegionSettings":true,"allowJupiterUniversalLink":false,"rcvTeleconference":"https://video.rainbowoffice.com/teleconference","rcvProductName":"Rainbow Office Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} vous a invité à une réunion {rcvProductName}.\n\nVeuillez rejoindre la réunion à l’aide de ce lien :\n    {joinUri}{passwordTpl}","assets":{"logo":"/assets/rainbow/logo.svg","icon":"/assets/rainbow/icon.png"},"showFeedback":false,"enableEDP":true},"rc":{"id":"1210","code":"rc","name":"RingCentral","appName":"RingCentral Embeddable","fullName":"RingCentral","application":"RingCentral Embeddable","allowRegionSettings":true,"defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"signupUrl":"https://www.ringcentral.com/office/plansandpricing.html","eulaLink":"https://www.ringcentral.com/legal/eulatos.html","callWithJupiter":{"link":"https://app.ringcentral.com/","protocol":"rcapp://","name":"RingCentral App"},"isDisableSpartan":true,"allowJupiterUniversalLink":false,"callWithSoftphone":{"protocol":"rcmobile://","name":"RingCentral Phone"},"rcmProductName":"RingCentral Meetings","rcvProductName":"RingCentral Video","rcvMeetingTopic":"{extensionName}'s {brandName} Video meeting","rcvSettingsTitle":"{brandName} Video meeting settings","rcvInviteMeetingContent":"{accountName} has invited you to a {rcvProductName} meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.ringcentral.com/teleconference","rcvTeleconference":"https://v.ringcentral.com/teleconference/","assets":{"logo":"/assets/rc/logo.svg","icon":"/assets/rc/icon.svg"},"subBrands":[{"id":"5010","code":"rcau"},{"id":"3610","code":"rcca"},{"id":"2010","code":"rceu"},{"id":"3710","code":"rcuk"}],"showFeedback":false,"enableEDP":true},"telus":{"id":"7310","code":"telus","name":"TELUS Business Connect","appName":"TELUS Business Connect Embeddable","fullName":"TELUS Business Connect","application":"TELUS Business Connect Embeddable","defaultLocale":"en-US","supportedLocales":["en-US","en-GB","en-AU","fr-FR","fr-CA","de-DE","it-IT","es-ES","es-419","ja-JP","pt-PT","pt-BR","zh-CN","zh-TW","zh-HK","nl-NL","ko-KR"],"callWithJupiter":{"link":"https://app.businessconnect.telus.com/","protocol":"rctelus://","name":"TELUS Business Connect App"},"callWithSoftphone":{"protocol":"rctelus://","name":"TELUS Business Connect Phone"},"allowRegionSettings":true,"isDisableSpartan":true,"allowJupiterUniversalLink":true,"rcmProductName":"TELUS Business Connect Meetings","rcvProductName":"Business Connect Video Meeting","rcvMeetingTopic":"{extensionName}'s Business Connect Video meeting","rcvSettingsTitle":"Business Connect Video meeting settings","rcvTeleconference":"https://video.businessconnect.telus.com/teleconference","rcvInviteMeetingContent":"{accountName} has invited you to a TELUS Business Connect Video meeting.\n\nPlease join using this link:\n    {joinUri}{passwordTpl}","teleconference":"https://meetings.businessconnect.telus.com/teleconference","eulaLink":"http://telus.com/BusinessConnect/ServiceTerms","assets":{"logo":"/assets/telus/logo.svg","icon":"/assets/telus/icon.svg"},"showFeedback":false,"enableEDP":true}},"ERROR_REPORT_KEY":undefined,"RECORDING_LINK":"https://ringcentral.github.io/ringcentral-media-reader/","MIXPANEL_KEY":"","ANALYTICS_SECRET_KEY":"adasdawqsadaaasa...","NOISE_REDUCTION_SDK_URL":"/noise-reduction","ADAPTER_NAME":"adapter.js"}).DISABLE_PATCHES) {
   (0, _usmRedux.enablePatches)();
 }
 var ModuleStatus = /*#__PURE__*/function (ModuleStatus) {
@@ -10747,44 +10747,6 @@ var AdapterCore = /*#__PURE__*/function () {
   return AdapterCore;
 }();
 exports.A = AdapterCore;
-//# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
-/***/ 33734:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-var __webpack_unused_export__;
-
-
-__webpack_require__(36000);
-__webpack_unused_export__ = ({
-  value: true
-});
-exports.Ay = void 0;
-__webpack_unused_export__ = popWindow;
-function popWindow(url, id, w, h) {
-  // Fixes dual-screen position                         Most browsers      Firefox
-  var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screen.left;
-  var dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screen.top;
-  var width = window.screen.width || window.outerWidth;
-  var height = window.screen.height || window.innerHeight;
-  var left = width / 2 - w / 2 + dualScreenLeft;
-  var top = height / 2 - h / 2 + dualScreenTop;
-  var newWindow = window.open(url, id, "scrollbars=yes, width=".concat(w, ", height=").concat(h, ", top=").concat(top, ", left=").concat(left));
-
-  // Puts focus on the newWindow
-  try {
-    newWindow === null || newWindow === void 0 ? void 0 : newWindow.focus();
-  } catch (error) {
-    /* ignore error */
-  }
-  return newWindow;
-}
-var _default = popWindow;
-exports.Ay = _default;
 //# sourceMappingURL=index.js.map
 
 
@@ -43635,73 +43597,72 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./node_modules/@babel/runtime/helpers/esm/typeof.js
-function _typeof(obj) {
+function _typeof(o) {
   "@babel/helpers - typeof";
 
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+    return typeof o;
+  } : function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  }, _typeof(o);
 }
+
 ;// ./node_modules/@babel/runtime/helpers/esm/toPrimitive.js
 
-function _toPrimitive(input, hint) {
-  if (_typeof(input) !== "object" || input === null) return input;
-  var prim = input[Symbol.toPrimitive];
-  if (prim !== undefined) {
-    var res = prim.call(input, hint || "default");
-    if (_typeof(res) !== "object") return res;
+function toPrimitive(t, r) {
+  if ("object" != _typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != _typeof(i)) return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return (hint === "string" ? String : Number)(input);
+  return ("string" === r ? String : Number)(t);
 }
+
 ;// ./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
 
 
-function _toPropertyKey(arg) {
-  var key = _toPrimitive(arg, "string");
-  return _typeof(key) === "symbol" ? key : String(key);
+function toPropertyKey(t) {
+  var i = toPrimitive(t, "string");
+  return "symbol" == _typeof(i) ? i : i + "";
 }
+
 ;// ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
 
-function _defineProperty(obj, key, value) {
-  key = _toPropertyKey(key);
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
+function _defineProperty(e, r, t) {
+  return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+    value: t,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[r] = t, e;
 }
+
 ;// ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
 
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
+function ownKeys(e, r) {
+  var t = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    enumerableOnly && (symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    })), keys.push.apply(keys, symbols);
+    var o = Object.getOwnPropertySymbols(e);
+    r && (o = o.filter(function (r) {
+      return Object.getOwnPropertyDescriptor(e, r).enumerable;
+    })), t.push.apply(t, o);
   }
-  return keys;
+  return t;
 }
-function _objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = null != arguments[i] ? arguments[i] : {};
-    i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
-      _defineProperty(target, key, source[key]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
-      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+function _objectSpread2(e) {
+  for (var r = 1; r < arguments.length; r++) {
+    var t = null != arguments[r] ? arguments[r] : {};
+    r % 2 ? ownKeys(Object(t), !0).forEach(function (r) {
+      _defineProperty(e, r, t[r]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) {
+      Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
     });
   }
-  return target;
+  return e;
 }
+
 ;// ./node_modules/redux/es/redux.js
 
 
@@ -56511,12 +56472,33 @@ var url = __webpack_require__(48788);
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(6860);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-// EXTERNAL MODULE: ./node_modules/@ringcentral-integration/widgets/lib/popWindow/index.js
-var popWindow = __webpack_require__(33734);
 // EXTERNAL MODULE: ./node_modules/@ringcentral-integration/widgets/lib/AdapterCore/index.js
 var AdapterCore = __webpack_require__(27461);
 // EXTERNAL MODULE: ./node_modules/@ringcentral-integration/utils/index.js
 var utils = __webpack_require__(48042);
+;// ./src/lib/popWindow.ts
+function popWindow(url, id, w, h) {
+  if (url.indexOf('javascript') > 0) {
+    throw new Error('Invalid window open url');
+  }
+  // Fixes dual-screen position                         Most browsers      Firefox
+  const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screen.left;
+  const dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screen.top;
+  const width = window.screen.width || window.outerWidth;
+  const height = window.screen.height || window.innerHeight;
+  const left = width / 2 - w / 2 + dualScreenLeft;
+  const top = height / 2 - h / 2 + dualScreenTop;
+  const newWindow = window.open(url, id, `scrollbars=yes, width=${w}, height=${h}, top=${top}, left=${left}`);
+
+  // Puts focus on the newWindow
+  try {
+    newWindow === null || newWindow === void 0 || newWindow.focus();
+  } catch (error) {
+    /* ignore error */
+  }
+  return newWindow;
+}
+/* harmony default export */ var lib_popWindow = (popWindow);
 // EXTERNAL MODULE: ./node_modules/qs/lib/index.js
 var lib = __webpack_require__(47136);
 var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
@@ -56876,10 +56858,13 @@ class Adapter extends AdapterCore/* default */.A {
           console.log(data.calls);
           break;
         case 'rc-login-status-notify':
-          console.log('rc-login-status-notify:', data.loggedIn, data.loginNumber, data.contractedCountryCode);
+          console.log('rc-login-status-notify:', data.loggedIn, data.loginNumber, data.contractedCountryCode, data.admin, data.features, data.isFreshLogin);
           break;
         case 'rc-calling-settings-notify':
           console.log('rc-calling-settings-notify:', data.callWith, data.callingMode);
+          break;
+        case 'rc-sms-settings-notify':
+          console.log('rc-sms-settings-notify:', data.senderNumber, data.senderNumbers);
           break;
         case 'rc-region-settings-notify':
           console.log('rc-region-settings-notify:', data.countryCode, data.areaCode);
@@ -56925,6 +56910,8 @@ class Adapter extends AdapterCore/* default */.A {
         case 'rc-adapter-theme-notify':
           this._setTheme(data.theme);
           break;
+        case 'rc-adapter-set-popup-window-size':
+          this._setPopupWindowSize(data.width, data.height);
         default:
           super._onMessage(data);
           break;
@@ -57022,6 +57009,13 @@ class Adapter extends AdapterCore/* default */.A {
       this._contentFrameContainerEl.style.height = 'calc(100% - 36px)';
       this._contentFrameEl.style.width = '100%';
       this._contentFrameEl.style.height = '100%';
+      if (window.opener) {
+        window.opener.postMessage({
+          type: 'rc-adapter-set-popup-window-size',
+          width: this._appWidth,
+          height: this._appHeight
+        }, '*');
+      }
     }
   }
   renderPosition() {
@@ -57077,6 +57071,11 @@ class Adapter extends AdapterCore/* default */.A {
     this._theme = theme;
     this._renderMainClass();
   }
+  _setPopupWindowSize(width, height) {
+    if (this._popupedWindow) {
+      this._popupedWindow.resizeTo(width, this._popupedWindow.outerHeight || this._appHeight + 64);
+    }
+  }
   async popupWindow() {
     if (!this._popupWindowPromise) {
       this._popupWindowPromise = this._popupWindow();
@@ -57102,7 +57101,7 @@ class Adapter extends AdapterCore/* default */.A {
     if (this._popupPageUri) {
       popupUri = `${this._popupPageUri}?${popupUri.split('?')[1]}`;
     }
-    this._popupedWindow = (0,popWindow/* default */.Ay)(popupUri, 'RCPopupWindow', 300, 535);
+    this._popupedWindow = lib_popWindow(popupUri, 'RCPopupWindow', 300, 535);
     this.setMinimized(true);
   }
   isWindowPoppedUp() {
@@ -57166,10 +57165,12 @@ class Adapter extends AdapterCore/* default */.A {
     });
   }
   controlCall(action, id) {
+    let options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
     this._postMessage({
       type: 'rc-adapter-control-call',
       callAction: action,
-      callId: id
+      callId: id,
+      options
     });
   }
   logoutUser() {
@@ -57190,6 +57191,15 @@ class Adapter extends AdapterCore/* default */.A {
       myLocation,
       ringoutPrompt,
       fromNumber
+    });
+  }
+  updateSmsSetting(_ref2) {
+    let {
+      senderNumber
+    } = _ref2;
+    this._postMessage({
+      type: 'rc-sms-settings-update',
+      senderNumber
     });
   }
   navigateTo(path) {
@@ -57264,10 +57274,10 @@ class Adapter extends AdapterCore/* default */.A {
     }
     this._currentCallEl.setAttribute('class', classnames_default()(this._styles.currentCallBtn, this.showCurrentCallBtn && this._styles.visible, !this.centerDuration && this.moveOutCurrentCallBtn && this._styles.moveOut, !this.centerDuration && this.moveInCurrentCallBtn && this._styles.moveIn));
   }
-  showFeedback(_ref2) {
+  showFeedback(_ref3) {
     let {
       onFeedback
-    } = _ref2;
+    } = _ref3;
     if (typeof onFeedback !== 'function') {
       throw new Error('onFeedback function is required.');
     }
@@ -57285,12 +57295,12 @@ class Adapter extends AdapterCore/* default */.A {
       text
     });
   }
-  updateRingtone(_ref3) {
+  updateRingtone(_ref4) {
     let {
       name,
       uri,
       volume
-    } = _ref3;
+    } = _ref4;
     this._postMessage({
       type: 'rc-adapter-update-ringtone',
       name,
@@ -57310,13 +57320,13 @@ class Adapter extends AdapterCore/* default */.A {
   get centerCallInfo() {
     return this._widgetCurrentPath === '/history';
   }
-  alertMessage(_ref4) {
+  alertMessage(_ref5) {
     let {
       message,
       level,
       ttl,
       details
-    } = _ref4;
+    } = _ref5;
     return this._requestWithPostMessage('/custom-alert-message', {
       message,
       level,
@@ -57358,7 +57368,7 @@ const defaultPrefix = "rc-widget";
 if (typeof NodeList !== 'undefined' && NodeList.prototype && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
-const version = "2.2.1";
+const version = "2.3.0";
 let currentScript = document.currentScript;
 const adapterName = "adapter.js";
 if (!currentScript) {
@@ -57438,9 +57448,11 @@ function init() {
     authorizationCode,
     authorizationCodeVerifier,
     jwt,
+    externalAuthId,
     defaultCallWith,
     enableFromNumberSetting,
     showMyLocationNumbers,
+    enableSmsSettingEvent,
     disconnectInactiveWebphone,
     multipleTabsSupport,
     disableInactiveTabCallEvent,
@@ -57461,7 +57473,9 @@ function init() {
     enableSmartNote,
     enableAudioInitPrompt,
     enableLoadMoreCalls,
-    mainTab
+    mainTab,
+    enableSharedMessages,
+    enableSideWidget
   } = options;
   const appUri = `${appUrl}?${obj2uri({
     appKey,
@@ -57495,9 +57509,11 @@ function init() {
     authorizationCode,
     authorizationCodeVerifier,
     jwt,
+    externalAuthId,
     defaultCallWith,
     enableFromNumberSetting,
     showMyLocationNumbers,
+    enableSmsSettingEvent,
     disconnectInactiveWebphone,
     multipleTabsSupport,
     disableInactiveTabCallEvent,
@@ -57512,7 +57528,9 @@ function init() {
     defaultAutoLogMessageEnabled,
     enableSMSTemplate,
     enableSmartNote,
+    enableSideWidget,
     enableAudioInitPrompt,
+    enableSharedMessages,
     enableLoadMoreCalls,
     mainTab,
     _t: Date.now()
