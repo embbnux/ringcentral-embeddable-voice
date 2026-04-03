@@ -4347,10 +4347,9 @@
   dependencies:
     "@ringcentral/mfe-react" "^0.4.18"
 
-"@ringcentral-integration/next-widgets@*", "@ringcentral-integration/next-widgets@0.0.1":
+"@ringcentral-integration/next-widgets@*", "@ringcentral-integration/next-widgets@git+https://github.com/ringcentral/ringcentral-js-widgets.git#next-widgets-release":
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@ringcentral-integration/next-widgets/-/next-widgets-0.0.1.tgz#8048572b303b743b1dc92afdd71244deb699849c"
-  integrity sha512-NylXJKWZ7i7dumwOsQEvv7ocYmE+b/VGfIYgIyrHKmmkm24FmX1O1XQ6p5kd11R9agv8qOd2KIA+6MwYAC+bUg==
+  resolved "git+https://github.com/ringcentral/ringcentral-js-widgets.git#1eda06515fdacb2e7fda9fb6611df5345605b8e3"
   dependencies:
     "@emoji-mart/react" "^1.0.1"
     "@ringcentral-integration/i18n" "*"
@@ -4443,7 +4442,7 @@
     "@material-ui/core" "^4.12.3"
     tslib ">=2.0.0"
 
-"@ringcentral/juno@^2.42.0", "@ringcentral/juno@^2.46.0":
+"@ringcentral/juno@^2.42.0", "@ringcentral/juno@^2.52.0":
   version "2.52.0"
   resolved "https://registry.yarnpkg.com/@ringcentral/juno/-/juno-2.52.0.tgz#939e3f4b993400173593c64afb3358f0f2089b99"
   integrity sha512-TTwqJ4VF+liNRq/JL3b1t8SXG/EBOXDyUUID4W6YLlC27qkEknPG/mKuXnSmNgvDN0LHtw3gz4kUvTPbc+it4g==
@@ -6956,6 +6955,11 @@ bindings@^1.5.0:
   integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
   dependencies:
     file-uri-to-path "1.0.0"
+
+blueimp-md5@^2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/blueimp-md5/-/blueimp-md5-2.19.0.tgz#b53feea5498dcb53dc6ec4b823adb84b729c4af0"
+  integrity sha512-DRQrD6gJyy8FbiE4s+bDoXS9hiW3Vbx5uCdwvcCf3zLHL+Iv7LtGHLpr+GZV8rHG8tK766FGYBwRbu8pELTt+w==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.9:
   version "4.12.0"
@@ -9965,6 +9969,22 @@ fast-uri@^3.0.1:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-3.0.3.tgz#892a1c91802d5d7860de728f18608a0573142241"
   integrity sha512-aLrHthzCjH5He4Z2H9YZ+v6Ujb9ocRuW6ZzkJQOrTxleEijANq4v1TsaPaVG1PZcuurEzrLcWRyYBYXD5cEiaw==
+
+fast-xml-builder@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/fast-xml-builder/-/fast-xml-builder-1.1.4.tgz#0c407a1d9d5996336c0cd76f7ff785cac6413017"
+  integrity sha512-f2jhpN4Eccy0/Uz9csxh3Nu6q4ErKxf0XIsasomfOihuSUa3/xw6w8dnOtCDgEItQFJG8KyXPzQXzcODDrrbOg==
+  dependencies:
+    path-expression-matcher "^1.1.3"
+
+fast-xml-parser@^5.2.5:
+  version "5.5.9"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-5.5.9.tgz#e59637abebec3dbfbb4053b532d787af6ea11527"
+  integrity sha512-jldvxr1MC6rtiZKgrFnDSvT8xuH+eJqxqOBThUVjYrxssYTo1avZLGql5l0a0BAERR01CadYzZ83kVEkbyDg+g==
+  dependencies:
+    fast-xml-builder "^1.1.4"
+    path-expression-matcher "^1.2.0"
+    strnum "^2.2.2"
 
 fastest-levenshtein@^1.0.12:
   version "1.0.16"
@@ -13647,7 +13667,7 @@ mixpanel-browser@^2.48.1:
   resolved "https://registry.yarnpkg.com/mixpanel-browser/-/mixpanel-browser-2.48.1.tgz#0fec03d87f57fe2e72c6a4b1df5924436840ece7"
   integrity sha512-vXTuUzZMg+ht7sRqyjtc3dUDy/81Z/H6FLFgFkUZJqKFaAqcx1JSXmOdY/2kmsxCkUdy5JN5zW9m9TMCk+rxGQ==
 
-mixpanel-browser@^2.49.0:
+mixpanel-browser@^2.49.0, mixpanel-browser@^2.68.0:
   version "2.77.0"
   resolved "https://registry.yarnpkg.com/mixpanel-browser/-/mixpanel-browser-2.77.0.tgz#dfaf0d80d1f9f4d97a0e83e60376985ed0687d8e"
   integrity sha512-gU3J7osa+ZiX0gQ6UBjUw5YLfz4lb9B4X3yiXNxBQW+mVDkg9L+0VNWa+QnpWJi/ehAHuvl2nN1XTHp5NIL3HQ==
@@ -14477,6 +14497,11 @@ path-exists@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-5.0.0.tgz#a6aad9489200b21fab31e49cf09277e5116fb9e7"
   integrity sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==
+
+path-expression-matcher@^1.1.3, path-expression-matcher@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/path-expression-matcher/-/path-expression-matcher-1.2.0.tgz#9bdae3787f43b0857b0269e9caaa586c12c8abee"
+  integrity sha512-DwmPWeFn+tq7TiyJ2CxezCAirXjFxvaiD03npak3cRjlP9+OjTmSy1EpIrEbh+l6JgUundniloMLDQ/6VTdhLQ==
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
@@ -16409,12 +16434,23 @@ ringcentral-client@^1.0.0-beta.2:
     form-data "^2.1.2"
     isomorphic-fetch "^2.2.1"
 
-ringcentral-web-phone@^0.8.13, ringcentral-web-phone@^0.8.14:
+ringcentral-web-phone@^0.8.14:
   version "0.8.14"
   resolved "https://registry.yarnpkg.com/ringcentral-web-phone/-/ringcentral-web-phone-0.8.14.tgz#134265e1f03656605682a470a2ce037e77851f8c"
   integrity sha512-IxE8vYegFwb2WMirAObNs7/m7oxomfHhtsBnJyj46sx8rnj5VnSB6VJbKUmBUTluATGlWg+gnhT5iGlBYWW3BA==
   dependencies:
     sip.js "0.13.5"
+
+ringcentral-web-phone@^2.2.7:
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/ringcentral-web-phone/-/ringcentral-web-phone-2.2.7.tgz#7c22ae36cc0617a915df63902433cb93f2f30974"
+  integrity sha512-Efe11Y2MLWLVfvTRDj4T+27DFUy4ahxbKU5p4XT+Xgje8snqqAd+gJ3/NXlDBON7WqQduO4Ldj/f6U1E8NbN3Q==
+  dependencies:
+    blueimp-md5 "^2.19.0"
+    fast-xml-parser "^5.2.5"
+    mixpanel-browser "^2.68.0"
+    sdp-transform "^2.15.0"
+    uuid "^11.1.0"
 
 ripemd160@=2.0.1:
   version "2.0.1"
@@ -16637,6 +16673,11 @@ screenfull@^5.1.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/screenfull/-/screenfull-5.2.0.tgz#6533d524d30621fc1283b9692146f3f13a93d1ba"
   integrity sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==
+
+sdp-transform@^2.15.0:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/sdp-transform/-/sdp-transform-2.15.0.tgz#79d37a2481916f36a0534e07b32ceaa87f71df42"
+  integrity sha512-KrOH82c/W+GYQ0LHqtr3caRpM3ITglq3ljGUIb8LTki7ByacJZ9z+piSGiwZDsRyhQbYBOBJgr2k6X4BZXi3Kw==
 
 seamless-immutable@^7.1.3:
   version "7.1.4"
@@ -17544,6 +17585,11 @@ strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
+
+strnum@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/strnum/-/strnum-2.2.2.tgz#f11fd94ab62b536ba2ecc615858f3747c2881b3f"
+  integrity sha512-DnR90I+jtXNSTXWdwrEy9FakW7UX+qUZg28gj5fk2vxxl7uS/3bpI4fjFYVmdK9etptYBPNkpahuQnEwhwECqA==
 
 style-loader@^3.3.1:
   version "3.3.4"
