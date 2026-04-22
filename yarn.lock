@@ -4465,20 +4465,20 @@
     type-fest "^2.12.2"
     typeface-lato "^0.0.75"
 
-"@ringcentral/mfe-core@^0.4.18":
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-core/-/mfe-core-0.4.18.tgz#3fde23165a4ef52d1503250a98049e38aecdb185"
-  integrity sha512-AZFq887ofzh9yIsFsjYO/GiYROHAI6UdOESNdDrrsXtoZtGSMaGZUsz/PypVOX20Je6Dzqc2OOL27mbTNnJz4Q==
+"@ringcentral/mfe-core@^0.4.20":
+  version "0.4.20"
+  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-core/-/mfe-core-0.4.20.tgz#716bc8a8d10bbafc0a87b53249cbc1af562d191c"
+  integrity sha512-ki+tmNWCGcXDAQIOJeUzmwACAHUfeINOUHo65bI7XDKGTutVq/7NABJU2xxfst91NWGlz0iCQ81IaxvTdwx0kg==
   dependencies:
-    "@ringcentral/mfe-shared" "^0.4.18"
-    "@ringcentral/mfe-transport" "^0.4.18"
+    "@ringcentral/mfe-shared" "^0.4.20"
+    "@ringcentral/mfe-transport" "^0.4.20"
 
 "@ringcentral/mfe-logger@^0.4.18":
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-logger/-/mfe-logger-0.4.18.tgz#71d4c3cc7fc25ae1183d15da3e3262fdd438025b"
-  integrity sha512-lqgyG3Xx8iVLpJ0DeP4TmEC0uDNz/2BmR/QCA/y5x39iylYZObIWrh/yFDQS622L1+RcbiHkpCwMiLPNsfL9Iw==
+  version "0.4.20"
+  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-logger/-/mfe-logger-0.4.20.tgz#876ea8d7c82ab99e863f8e7cf786b88c4bbe5baf"
+  integrity sha512-fYIKEV7KGjOpfTgj0SKDz6aqT4U8ZFq8GXP8UiSFtgqZ/xKuLEmdpPMdoAmrMugb4/QjaiVRDLaRjg1Hk7jwZw==
   dependencies:
-    "@ringcentral/mfe-shared" "^0.4.18"
+    "@ringcentral/mfe-shared" "^0.4.20"
     "@roarr/browser-log-writer" "1.3.0"
     dexie "3.2.4"
     file-saver "2.0.5"
@@ -4487,22 +4487,22 @@
     safe-stable-stringify "^2.4.3"
     serialize-error "11.0.0"
 
-"@ringcentral/mfe-react@^0.4.18":
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-react/-/mfe-react-0.4.18.tgz#56400b4c06a5bb5f07f96abad52e0d516fc8b64a"
-  integrity sha512-fM8XDjesrgo7spRjNkZ/b49bEUyvDtxfi10VmCCO+gSnuSWsDbOsuPY6nuIyKhvspP36yejYLpbrR84cCgQjkA==
+"@ringcentral/mfe-react@^0.4.18", "@ringcentral/mfe-react@^0.4.20":
+  version "0.4.20"
+  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-react/-/mfe-react-0.4.20.tgz#7310b8500dc5a41a4593acb7eba2693c86948a18"
+  integrity sha512-9JQLaJtsmcAUjHTCSnCysJcjXbMLo/jITBEK8Tw4tQpCcdHEdDyNDL12dh4JfXI/sjhwvEHGnnMoL5STsr57ig==
   dependencies:
-    "@ringcentral/mfe-core" "^0.4.18"
+    "@ringcentral/mfe-core" "^0.4.20"
 
-"@ringcentral/mfe-shared@^0.4.18":
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-shared/-/mfe-shared-0.4.18.tgz#5303296dc851418fad3622b7206fd212ad6f5113"
-  integrity sha512-liK1smluHK066DvU8uXv5DpRuJh+pGamAc4eZonQFdJYggEV4b0inAYni+kdjr/jI4Z2H99oWxovNn1B5yt47w==
+"@ringcentral/mfe-shared@^0.4.20":
+  version "0.4.20"
+  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-shared/-/mfe-shared-0.4.20.tgz#354ca95a0ace929b7364ddc06d6c49599256d817"
+  integrity sha512-6x/cyjnQLaprUhCB7Kl7s1kJdB5FdakwmeScIkfBtEcwOmBoqFWcWTcYaRS6tacyF+RvR8X8/+b9U7DwlFRLrg==
 
-"@ringcentral/mfe-transport@^0.4.18":
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-transport/-/mfe-transport-0.4.18.tgz#46bda28d9b619d54993ee6a72402c4f962b5cd19"
-  integrity sha512-trbSBlZVKaWwgSPk1J+d1S9PgVHnvRcVEtenoqp1Ok893BOIS8bLr/tWRY7kYxvZSQah9LbgCO6ujbFbGogiUg==
+"@ringcentral/mfe-transport@^0.4.20":
+  version "0.4.20"
+  resolved "https://registry.yarnpkg.com/@ringcentral/mfe-transport/-/mfe-transport-0.4.20.tgz#9363efd11b42640396f8767c1d800342774b9e34"
+  integrity sha512-0LVii2Hs5SUFW9nQ/YWvNDHB8m+CcWDTJvxXi2H4DGWpdevpiP2rxs1drN2TNz26P2A6CpU4UW8SFghunSpkMA==
   dependencies:
     data-transport "^5.0.3"
 
