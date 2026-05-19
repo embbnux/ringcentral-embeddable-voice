@@ -17,6 +17,8 @@ src/noise-reduction
 site
 src/plugins.json
 .vscode
+.yarn
+.yarnrc.yml
 
 *storybook.log
 storybook-static
