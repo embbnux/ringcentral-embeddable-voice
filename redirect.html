@@ -24,6 +24,11 @@
       Loading...
     </p>
   </div>
-  <script src="redirect.js"></script>
+  <script>
+  if (window.opener) {
+    window.opener.postMessage({ callbackUri: window.location.href }, '*');
+  }
+  </script>
+  <!-- <script src="redirect.js"></script> -->
 </body>
 </html>
